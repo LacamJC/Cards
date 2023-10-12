@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed&family=Satisfy&display=swap');
+:root
+{
+    --cor1  : #0095f6;
+    --cor2  : rgba(0, 148, 246, 0.359);
+    --cor3  : rgba(255,255,255,1);
+    --cor4  : rgba(250,250,250,1) ; 
+    --cor5  : rgba(250,250,250,1);
+
+    --font1 : 'Pacifico', cursive;
+    --font2 : 'Satisfy', cursive;
+    --font3 : 'Roboto Condensed', sans-serif;
+}
+
+#inicio
+{
+    display: flex;
+
+    padding: 10px;
+    height: 40px;
+
+    border: 1px solid black;
+
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+#controle
+{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--cor4);
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#formulario
+{
+    display: inline-flex;
+    flex-direction: column;
+    
+    
+    justify-content: space-around;
+    align-items: center;
+
+    width:400px;
+    margin: 30px 0px;
+    height: 500px;
+
+    background-color: var(--cor3);
+    border: 1px solid rgba(52, 52, 52, 0.425);
+}
+
+#formulario h1
+{
+    font-family: var(--font1);
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+
+    margin: 10px;
+
+}
+
+input
+{
+    width: 250px;
+    height: 25px;
+    padding: 10px;
+
+    font-family: var(--font3);
+    letter-spacing: 1px;
+    
+    border: 1px solid black;
+    background-color: var(--cor5);
+    font-size: 0.9em;
+}
+
+#btn
+{
+    width: 274px;
+    height: 40px;
+
+    background-color: var(--cor2);
+    
+    transition-duration: 0.5s;
+}
+
+#btn:hover
+{
+    background-color: var(--cor1);
+}
+
+#ou
+{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 150px;
+    
+}
+#ou #linha
+{
+    
+    width: 60px;
+    height: 0px;
+    border: 0.1px solid rgb(49, 49, 49);
+}
+
+#ent_face
+{
+    color: #3b5998;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#ent_face:hover
+{
+    text-decoration: underline;
+}
+
+#esq_senha
+{
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+#esq_senha:hover
+{
+    text-decoration: underline;
+}
+
+
+#cadastro
+{
+    display: flex;
+    background-color: var(--cor3);
+    border: 1px solid rgba(52, 52, 52, 0.425);
+    
+    justify-content: center;
+    align-items: center;
+    
+    width: 400px;
+    height: 50px;
+    margin: 30px 0px;
+
+}
+
+#cadastro a
+{
+    text-decoration: none;
+}
+
+#cadastro a:hover
+{
+    text-decoration: underline;
+}

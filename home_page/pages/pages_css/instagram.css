@@ -1,0 +1,93 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#inicio
+{
+    display: flex;
+    border: 1px solid black;
+    
+    justify-content: flex-start;
+    align-items: center;
+    
+    height: 40px;
+    padding: 10px;
+}
+
+.conteudo
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.menu-bar
+{
+    background-color: rgba(255, 0, 0, 0.363);
+    width: 20%;
+}
+
+.menu-bar .menu-list
+{
+    background-color: rgba(255, 0, 0, 0.288);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu-bar .menu-list .menu-list-item
+{
+    background-color: green;
+    height: 30px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+}
+
+.profile
+{
+    background-color: rgba(0, 128, 0, 0.342);
+    width: 100%;
+}
+
+.header-profile
+{
+    /* background-color: rgba(255, 255, 0, 0.301); */
+}
+
+.info-profile
+{
+    /* background-color: rgba(250, 128, 114, 0.404); */
+}
+
+.main-profile
+{
+    /* background-color: rgba(0, 255, 255, 0.418); */
+}
+
+
+.publicacoes
+{
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
+
+.publicacao
+{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}

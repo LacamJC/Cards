@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+:root
+{
+    --coryt1    : #FF0000 ;
+    --coryt2    : #282828 ;
+    --coryt3    : white ;
+
+    --corins1   : #405DE6 ;
+    --corins2   : #833AB4 ;
+    --corins3   : #E1306C ;
+    --corins4   : #F56040 ;
+    --corins5   : #FCAF45 ;
+
+    --corgit1   : #24292e ;
+    --corgit2   : #fafbfc ;
+    --corgit3   : #2dba4e ;
+
+    --corface1  : #3b5998 ;
+    --corface2  : #8b9dc3 ;
+    --corface3  : #ffffff ;
+
+    --corzap1   : #075E54 ;
+    --corzap2   : #128C7E ;
+    --corzap3   : #25D366 ;
+    --corzap4   : #34B7F1 ;
+
+    --corlink1  : #0A66C2 ; 
+    --corlink2  : #FFFFFF ;
+
+    --tran      : 0.75s ; 
+
+    --font1     : 'Poppins', cursive;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.all
+{
+    
+        /* background-color: rgba(0, 0, 255, 0.315); */
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 3em;
+        grid-column-gap: 1em;
+        /* margin-left: 100px; */
+        justify-items: center;
+}
+
+
+@media screen and (max-width: 1024px)
+{
+    .all
+    {
+        background-color: rgba(255, 0, 0, 0.13);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .all
+    {
+        background-color: rgba(0, 128, 0, 0.233);
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#card
+{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 300px;
+    height: 450px;
+    /* margin: 20px 0px; */
+    padding: 15px;
+    
+    border: 2px solid black;
+    border-radius: 25px;
+    
+    line-height: 1.5em;
+    
+    transition-duration: var(--tran);
+}
+
+#card p
+{
+    line-height: 1.5em;
+    font-family: var(--font1);
+
+    font-size: 0.9em;
+
+    font-weight: 300;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+#card h1
+{
+    font-family: var(--font1);
+    font-weight: 600;
+}
+
+#card a
+{
+    margin-top: 20px;
+}
+
+
+img
+{
+    width: 100px;
+    filter: drop-shadow(0 0 0 0.4em rgb(255, 0, 0));
+}   
+
+button
+{
+    display: flex;
+    width: 200px;
+    height: 40px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    border-radius: 10px;
+}
+
+a
+{
+    display: flex;
+    background-color: black;
+    
+    
+    width: 200px;
+    height: 40px;
+    
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    
+    border-radius: 10px;
+    transition-duration: 2s;
+}
+
+a:hover
+{
+    transition-duration: 1s;
+    text-decoration: underline;
+}
+
+.youtube:hover
+{
+    background-color: var(--coryt2);
+    color: white;
+    transition-duration: var(--tran);
+}
+
+.youtube:hover a
+{
+    background-color: var(--coryt1);
+    color: var(--coryt2);
+    
+    transition-duration: 2s;
+}
+
+.youtube a:hover, .youtube a:hover
+{
+    background-color: var(--coryt1);
+    color: var(--coryt3);
+    text-decoration: underline;
+}
+
+.instagram:hover
+{
+    background-color: var(--corins3);
+    color: white;
+    
+
+    transition-duration: var(--tran);
+
+}
+
+.instagram:hover a
+{
+    background-color: var(--corins1);
+
+    transition-duration: 2s;
+}
+
+.instagram:hover a:hover
+{
+    background-color: var(--corins2);
+    color: black;
+    text-decoration: underline;
+}
+
+.git:hover
+{
+    background-color: var(--corgit1);
+    color: var(--corgit2);
+
+}
+
+.git:hover a
+{
+    background-color: var(--corgit3);
+    color: var(--corgit1);
+    transition-duration: var(--tran);
+}
+
+.facebook:hover
+{
+    background-color: var(--corface2);
+    color: white;
+}
+
+.facebook:hover a
+{
+    background-color: var(--corface1);
+}
+
+.whatsapp:hover
+{
+    background-color: var(--corzap3);
+    color: white;
+}
+
+.whatsapp:hover a
+{
+    background-color: var(--corzap1);
+}
+
+.linkedin 
+{
+    background-color: var(--corlink2);
+
+}
+
+.linkedin:hover a 
+{
+    background-color: var(--corlink1);
+}
+
+@media (max-width: 900px)
+{
+    #conteudo
+    {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #card
+    {
+        width: 250px;
+    }
+}
+
+
